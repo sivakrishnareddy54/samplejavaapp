@@ -20,7 +20,7 @@ pipeline {
                }
            }			
         }
-        stage('codecoverage') {
+        stage('codecoverate') {
 	   steps {
                 echo 'codecoverage..'
 		sh script: '/opt/apache-maven-3.6.3/bin/mvn cobertura:cobertura -Dcobertura.report.format=xml'
